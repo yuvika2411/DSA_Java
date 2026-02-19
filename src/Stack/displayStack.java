@@ -3,8 +3,23 @@ package Stack;
 import java.util.Stack;
 
 public class displayStack {
+    public static void displayReverseRec(Stack<Integer> st){
+        if(st.size()==0){
+            return;
+        }
+        int top=st.pop();
+        System.out.print(top+" ");
+        displayReverseRec(st);
+        st.push(top);
+    }
     public static void displayRec(Stack<Integer> st){
-
+        if(st.size()==0){
+            return;
+        }
+        int top=st.pop();
+        displayRec(st);
+        System.out.print(top+" ");
+        st.push(top);
     }
     static void main() {
         Stack<Integer> st= new Stack<>();
@@ -27,15 +42,15 @@ public class displayStack {
 //            st.push(x);
 //        }
 
-        int n= st.size();
-        int arr[]= new int [n];
-        for(int i=n-1;i>=0;i--){
-            int x= st.pop();
-            arr[i]=st.pop();
-        }
-        for(int i=0;i<n;i++){
-            st.push(arr[i]);
-        }
+//        int n= st.size();
+//        int arr[]= new int [n];
+//        for(int i=n-1;i>=0;i--){
+//            int x= st.pop();
+//            arr[i]=st.pop();
+//        }
+//        for(int i=0;i<n;i++){
+//            st.push(arr[i]);
+//        }
 
     }
 }
