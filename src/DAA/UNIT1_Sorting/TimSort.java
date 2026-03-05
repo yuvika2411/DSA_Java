@@ -1,4 +1,4 @@
-package Sorting;
+package DAA.UNIT1_Sorting;
 
 public class TimSort {
     static final int RUN = 32;

@@ -1,4 +1,4 @@
-package Sorting;
+package DAA.UNIT1_Sorting;
 import java.util.*;
 public class ShellSort {
     public static void main(String[] args) {

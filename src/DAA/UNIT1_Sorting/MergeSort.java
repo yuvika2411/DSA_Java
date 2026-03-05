@@ -1,4 +1,4 @@
-package Sorting;
+package DAA.UNIT1_Sorting;
 import java.util.*;
 public class MergeSort {
     static int rc=0;
