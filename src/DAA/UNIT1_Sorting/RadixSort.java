@@ -3,7 +3,6 @@ package DAA.UNIT1_Sorting;
 import java.util.Scanner;
 
 public class RadixSort {
-
     static int getMax(int arr[], int n) {
         int max = arr[0];
         for (int i = 1; i < n; i++)
@@ -11,7 +10,6 @@ public class RadixSort {
                 max = arr[i];
         return max;
     }
-
     static void countSort(int arr[], int n, int pos) {
         int output[] = new int[n];
         int count[] = new int[10];
@@ -46,7 +44,6 @@ public class RadixSort {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-
         radixSort(arr,n);
 
         System.out.print(arr[0]);

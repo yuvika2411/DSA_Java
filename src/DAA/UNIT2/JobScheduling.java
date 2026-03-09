@@ -17,7 +17,6 @@ public class JobScheduling {
             profit[i] = sc.nextInt();
         }
 
-        // profit ke basis par sorting (descending)
         for(int i=0;i<n-1;i++){
             for(int j=0;j<n-i-1;j++){
                 if(profit[j] < profit[j+1]){
@@ -42,7 +41,6 @@ public class JobScheduling {
 
         int total = 0;
 
-        // job scheduling
         for(int i=0;i<n;i++){
             for(int j=Math.min(n,deadline[i])-1;j>=0;j--){
                 if(slot[j]==-1){
